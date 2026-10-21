@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Móveis Catarinense</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+    <div class="topo">
+        <div>
+            <h1>Móveis Catarinense</h1>
+            <p>Painel de gerenciamento</p>
+        </div>
+
+        <button class="botao-menu" onclick="alert('Menu em construção')">
+            ☰
+        </button>
+    </div>
+
+    <input
+        type="search"
+        id="pesquisa"
+        placeholder="Pesquisar pedidos, clientes..."
+    >
+</header>
+<nav class="navegacao">
+    <button class="aba ativa" data-tela="inicio">Início</button>
+    <button class="aba" data-tela="clientes">Clientes</button>
+    <button class="aba" data-tela="pedidos">Pedidos</button>
+</nav>
+    <main>
+        <div id="tela-inicio" class="tela"></div>
+        <h2>Resumo rápido</h2>
+
+        <section>
+            <h3>Pedidos ativos</h3>
+            <p>24</p>
+        </section>
+
+        <section>
+            <h3>Itens de mobiliário</h3>
+            <p>58</p>
+        </section>
+                <h2>Ações rápidas</h2>
+
+        <div class="acoes">
+            <button onclick="alert('Novo pedido')">
+                + Novo pedido
+            </button>
+
+            <button onclick="alert('Novo cliente')">
+                + Novo cliente
+            </button>
+        </div>
+                <h2>Próximas entregas</h2>
+
+        <div class="entregas">
+
+            <div class="entrega">
+                <div>
+                    <h3>Pedido #1024</h3>
+                    <p>João da Silva</p>
+                    <p>Guarda-roupa 6 portas</p>
+                </div>
+
+                <span>25/10/2026</span>
+            </div>
+
+            <div class="entrega">
+                <div>
+                    <h3>Pedido #1025</h3>
+                    <p>Maria Oliveira</p>
+                    <p>Mesa de jantar</p>
+                </div>
+
+                <span>27/10/2026</span>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
